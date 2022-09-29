@@ -2,6 +2,7 @@
 provider "google" {
   project = "noted-cider-362008"
   region  = "us-central1"
+  credentials = file("./terraform-sa.json")
 }
 
 # https://www.terraform.io/language/settings/backends/gcs
