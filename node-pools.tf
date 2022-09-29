@@ -31,7 +31,7 @@ resource "google_container_node_pool" "general" {
 
 resource "google_container_node_pool" "spot" {
   name    = "spot"
-  cluster = google_container_cluster.primary.id
+  cluster = google_container_cluster.primary1.id
 
   management {
     auto_repair  = true
